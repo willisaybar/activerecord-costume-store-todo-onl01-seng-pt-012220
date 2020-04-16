@@ -8,6 +8,7 @@ class Costume < ActiveRecord::Migration[5.2]
       t.string :price
       t.integer :size
       t.string :image_url
+      t.timestamps 
     end
   end
 end
