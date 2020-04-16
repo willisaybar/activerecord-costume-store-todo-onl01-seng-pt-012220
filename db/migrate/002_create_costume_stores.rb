@@ -1,11 +1,12 @@
 # Create your costume_stores migration here
 class CostumeStores < ActiveRecord::Migration[5.2]
   def change
-    create_table :costumes do |t|
+    create_table :costume_stores do |t|
       t.string :name
-      t.integer :price
-      t.integer :size
-      t.string :image_url
+      t.string :location
+      t.integer :costume_inventory
+      t.string :employees
+
       t.timestamps
     end
   end
